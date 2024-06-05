@@ -30,9 +30,7 @@ export const abel = Abel({
   weight: ['400']
 })
 export const freight = localFont({ src: './Freight-Text-Bold.otf' })
-export const americaBreweryRough = localFont({
-  src: './american-brewery-rough.ttf'
-})
+
 export const alike = Alike({
   subsets: ['latin'],
   weight: ['400']
