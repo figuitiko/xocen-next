@@ -33,19 +33,34 @@ const durationVariant = cva(
 export const NavBar = () => {
   return (
     <div className="px-9 flex items-center bg-main-200 py-4 w-full  max-w-[1200px]">
-      <a className="flex gap-4 items-center text-white">
-        <picture>
-          <Image
-            src="/images/whatsapp.svg"
-            alt="logo"
-            width={40}
-            height={40}
-            className="fill-white h-auto w-auto"
-          />
-        </picture>
-        <span className="text-white">{CONFIG.WHATSAPP_NUMBER}</span>
-      </a>
-      <div className="text-white ml-auto flex  gap-12">
+      <div className="flex flex-col md:flex-row  gap-2 md:gap-8">
+        <a href="/">
+          <picture>
+            <Image
+              src="/images/footer-logo.png"
+              alt="logo"
+              width={150}
+              height={150}
+            />
+          </picture>
+        </a>
+        <a
+          className="flex gap-4 items-center text-white"
+          href="whatsapp://send?phone=+529852117095"
+        >
+          <picture>
+            <Image
+              src="/images/whatsapp.svg"
+              alt="logo"
+              width={40}
+              height={40}
+              className="fill-white h-auto w-auto"
+            />
+          </picture>
+          <span className="text-white">{CONFIG.WHATSAPP_NUMBER}</span>
+        </a>
+      </div>
+      <div className="text-white ml-auto flex  gap-4">
         <div className="hidden md:flex gap-4 items-center">
           <a
             href="https://www.facebook.com/XOCENBIRDINGTRAIL"
