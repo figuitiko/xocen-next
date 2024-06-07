@@ -122,7 +122,7 @@ const HeroMain = () => {
               </picture>
               <picture className="mt-auto">
                 <Image
-                  src="/images/icono-main.webp"
+                  src="/images/icon-main.svg"
                   alt="logo"
                   width={100}
                   height={100}
@@ -162,7 +162,7 @@ const HeroMain = () => {
             <div className="col-start-2 row-start-2 self-center justify-self-center">
               <picture className="mt-auto">
                 <Image
-                  src="/images/icono-main.webp"
+                  src="/images/icon-main.svg"
                   alt="logo"
                   width={100}
                   height={100}
