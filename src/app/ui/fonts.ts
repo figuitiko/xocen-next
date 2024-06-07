@@ -9,7 +9,8 @@ import {
   Abril_Fatface,
   Rakkas,
   Fascinate_Inline,
-  Macondo
+  Macondo,
+  Poppins
 } from 'next/font/google'
 
 export const roboto = Roboto({
@@ -55,4 +56,8 @@ export const facinateInline = Fascinate_Inline({
 export const macondo = Macondo({
   subsets: ['latin'],
   weight: ['400']
+})
+export const poppins = Poppins({
+  weight: ['100', '400', '500', '700', '900'],
+  subsets: ['latin-ext', 'latin']
 })

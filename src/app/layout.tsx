@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/header/header'
 import Footer from '@/components/footer/footer'
+import { cn } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +19,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn(inter.className, 'bg-layout-color')}>
         <Header />
-        <main className="flex min-h-[calc(100vh-668px)] flex-col items-center justify-between max-w-[1200px] mx-auto">
+        <main className="flex min-h-[calc(100vh-668px)] flex-col items-center justify-between mx-auto">
           {children}
         </main>
         <Footer />

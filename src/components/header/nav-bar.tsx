@@ -32,7 +32,7 @@ const durationVariant = cva(
 
 export const NavBar = () => {
   return (
-    <div className="px-9 flex items-center bg-main-200 py-4 w-full  max-w-[1200px]">
+    <div className="px-4 flex items-center bg-main-200 py-4 w-full  max-w-[1200px]">
       <div className="flex flex-col md:flex-row  gap-2 md:gap-8">
         <a href="/">
           <picture>

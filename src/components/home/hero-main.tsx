@@ -18,7 +18,7 @@ export const HOME_CONTENT = {
 const HeroMain = () => {
   return (
     <>
-      <section className=" hidden md:flex w-full gap-12">
+      <section className=" hidden md:flex w-full gap-12 max-w-[1200px]">
         <div className="flex flex-col flex-1 gap-4 my-4">
           <Text
             as="h1"

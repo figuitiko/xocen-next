@@ -20,7 +20,9 @@ const config: Config = {
           200: '#226440'
         },
         'light-brand': '#F3F0F0',
-        'brand-text': '#252525'
+        'brand-text': '#252525',
+        'layout-color': '#F3F0F0',
+        'light-dark': '#4D4D4D'
       },
       keyframes: {
         'fade-in': {

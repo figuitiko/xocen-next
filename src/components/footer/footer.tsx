@@ -15,7 +15,7 @@ export const FOOTER_CONTENT = {
 const Footer = () => {
   const currentYear = new Date().getFullYear()
   return (
-    <footer className="flex w-full flex-col gap-4 bg-main-200  items-center justify-center p-12 md:p-40 pb-24">
+    <footer className="flex w-full flex-col gap-4 bg-main-200  items-center justify-center px-4 py-12 md:p-40 pb-24">
       <div className="flex items-center  justify-center flex-col max-w-[1200px] gap-4 border-b-2 border-b-light-brand pb-8">
         <Text
           as="h4"
