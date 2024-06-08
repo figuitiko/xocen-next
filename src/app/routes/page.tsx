@@ -1,6 +1,16 @@
+import RoutesBirding from '@/components/routes/routes-birding'
+import RoutesBirdingMobile from '@/components/routes/routes-birding-mobile'
+import RoutesHero from '@/components/routes/routes-hero'
+import RoutesHeroMobil from '@/components/routes/routes-hero-mobil'
+
 const RoutesPage = () => {
   return (
-    <div>RoutesPage</div>
+    <>
+      <RoutesHero />
+      <RoutesHeroMobil />
+      <RoutesBirding />
+      <RoutesBirdingMobile />
+    </>
   )
 }
 

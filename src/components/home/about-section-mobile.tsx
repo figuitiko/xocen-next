@@ -3,7 +3,7 @@ import { Text } from '../ui/text'
 import { ABOUT_CONTENT } from './about-section'
 import { alfaSlabOne, rakkas } from '@/app/ui/fonts'
 import Image from 'next/image'
-import { ButtonMain } from '../buttons'
+import { ButtonMain } from '../ui/buttons'
 export const ABOUT_CONTENT_MOBILE = {
   PARAGRAPH_1: 'Uniendo esfuerzos por los Pueblos Autóctonos de México',
   PARAGRAPH_2:

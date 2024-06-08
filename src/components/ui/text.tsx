@@ -20,7 +20,7 @@ export const Text = <T extends React.ElementType = 'span'>({
 
   return (
     <Component
-      className={cn('text-2xl font-medium text-light-brand', font, className)}
+      className={cn('text-2xl font-normal text-light-brand', font, className)}
       {...others}
     >
       {children}

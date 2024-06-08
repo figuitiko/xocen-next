@@ -1,7 +1,7 @@
 import { alfaSlabOne, rakkas } from '@/app/ui/fonts'
 import { Text } from '../ui/text'
 import Image from 'next/image'
-import { ButtonMain } from '../buttons'
+import { ButtonMain } from '../ui/buttons'
 export const HERO_MAIN_CONTENT = {
   HERO_MAIN_HEADING: 'EcoTurismo Maya',
   HERO_PARAGRAPH_TEXT_2: 'Lorem ipsum dolor sit amet',
@@ -50,7 +50,7 @@ const HeroMainMobile = () => {
         </div>
         <Text
           as="p"
-          className="text-center  text-brand-text text-[20px]  leading-[20px] mt-4"
+          className="text-center  text-brand text-[20px]  leading-[20px] mt-4"
         >
           {HERO_MAIN_CONTENT.HERO_PARAGRAPH_TEXT_3_MOBILE}
         </Text>
@@ -86,7 +86,7 @@ const HeroMainMobile = () => {
       <div className="flex flex-col w-full justify-center  p-8">
         <Text
           as="p"
-          className="text-center text-brand-text text-[40px]  leading-[50px] mt-4"
+          className="text-center text-brand text-[40px]  leading-[50px] mt-4"
         >
           {HERO_MAIN_CONTENT.HERO_PARAGRAPH_TEXT_3}
         </Text>
@@ -99,7 +99,7 @@ const HeroMainMobile = () => {
             className="h-auto w-auto object-contain"
           />
         </picture>
-        <Text className="text-center text-brand-text text-[24px]  leading-[30px] mt-4">
+        <Text className="text-center text-brand text-[24px]  leading-[30px] mt-4">
           {HERO_MAIN_CONTENT.HERO_PARAGRAPH_TEXT_4}
         </Text>
       </div>

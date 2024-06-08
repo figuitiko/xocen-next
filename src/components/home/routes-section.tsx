@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Text } from '../ui/text'
 import { alfaSlabOne, rakkas } from '@/app/ui/fonts'
-import { ButtonMain } from '../buttons'
+import { ButtonMain } from '../ui/buttons'
 import CardRoutes from './card-routes'
 
 const RoutesSection = () => {
@@ -37,7 +37,7 @@ const RoutesSection = () => {
             </Text>
             <Text
               as="p"
-              className="text-[16px] md:text-[24px] text-brand-text leading-[21px] md:leading-[36px] font-normal w-[80%] "
+              className="text-[16px] md:text-[24px] text-brand leading-[21px] md:leading-[36px] font-normal w-[80%] "
             >
               El diseño de las rutas y la calidad de nuestros servicios se
               ofrecen para todo aquel que busca alternativas de recreación a

@@ -1,7 +1,7 @@
 import { Text } from '@/components/ui/text'
 import Image from 'next/image'
 import { alfaSlabOne, poppins, rakkas } from '../ui/fonts'
-import { ButtonMain } from '@/components/buttons'
+import { ButtonMain } from '@/components/ui/buttons'
 
 const AboutPage = () => {
   return (

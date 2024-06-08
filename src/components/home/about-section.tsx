@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Text } from '../ui/text'
 import { rakkas } from '@/app/ui/fonts'
-import { ButtonMain } from '../buttons'
+import { ButtonMain } from '../ui/buttons'
 
 export const ABOUT_CONTENT = {
   MAIN_HEADING: 'Sobre Nosotros',

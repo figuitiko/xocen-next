@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text } from '../ui/text'
-import { ButtonMain } from '../buttons'
+import { ButtonMain } from '../ui/buttons'
 import { alfaSlabOne, poppins } from '@/app/ui/fonts'
 import FooterNavbar from './footer-navbar'
 export const FOOTER_CONTENT = {

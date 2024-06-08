@@ -1,7 +1,7 @@
 import { Text } from '@/components/ui/text'
 
 import Image from 'next/image'
-import { ButtonMain } from '@/components/buttons'
+import { ButtonMain } from '@/components/ui/buttons'
 import { alfaSlabOne, rakkas } from '@/app/ui/fonts'
 
 export const HOME_CONTENT = {
@@ -46,13 +46,13 @@ const HeroMain = () => {
           </div>
           <Text
             as="p"
-            className="text-[54px] text-brand-text leading-[68px] font-normal"
+            className="text-[54px] text-brand leading-[68px] font-normal"
           >
             {HOME_CONTENT.HERO_HEADER_3_TEXT}
           </Text>
           <Text
             as="p"
-            className="text-[24px] text-brand-text leading-[30px] font-normal"
+            className="text-[24px] text-brand leading-[30px] font-normal"
           >
             {HOME_CONTENT.HERO_PARAGRAPH_TEXT}
           </Text>
@@ -142,7 +142,7 @@ const HeroMain = () => {
             <div className=" col-start-1 col-end-3  row-start-1 size-fit self-center">
               <Text
                 as="h2"
-                className="text-[48px] text-brand-text leading-[60px] uppercase  font-normal "
+                className="text-[48px] text-brand leading-[60px] uppercase  font-normal "
               >
                 {HOME_CONTENT.HERO_PARAGRAPH_TEXT_2}
               </Text>
@@ -150,7 +150,7 @@ const HeroMain = () => {
             <div className="col-start-1 row-start-2">
               <Text
                 as="p"
-                className="text-[24px] text-brand-text leading-[30px]  font-normal"
+                className="text-[24px] text-brand leading-[30px]  font-normal"
               >
                 {HOME_CONTENT.HERO_PARAGRAPH_TEXT_3}
               </Text>

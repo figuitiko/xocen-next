@@ -21,10 +21,8 @@ const CardRoutes = ({ imgUrl, title, description }: Props) => {
         />
       </picture>
       <div className="flex flex-col text-wrap pl-4 pr-8 justify-center">
-        <Text className="text-[28px] text-brand-text leading-[31px]">
-          {title}
-        </Text>
-        <Text className="text-[11px] text-brand-text leading-[21px]">
+        <Text className="text-[28px] text-brand leading-[31px]">{title}</Text>
+        <Text className="text-[11px] text-brand leading-[21px]">
           {description}
         </Text>
       </div>

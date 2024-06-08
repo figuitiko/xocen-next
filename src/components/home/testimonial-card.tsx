@@ -28,7 +28,7 @@ const TestimonialCard = ({ imgUrl, title, subTitle, description }: Props) => {
             <Text
               as="h3"
               font={poppins.className}
-              className="text-[24px] text-brand-text leading-[21px]"
+              className="text-[24px] text-brand leading-[21px]"
             >
               {title}
             </Text>
