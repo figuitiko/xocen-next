@@ -15,12 +15,12 @@ const TestimonialCard = ({ imgUrl, title, subTitle, description }: Props) => {
     <div className="flex flex-col flex-1 gap-2">
       <div className="flex p-8 flex-col bg-white rounded-3xl gap-4">
         <div className="flex gap-8">
-          <picture className="rounded-full overflow-hidden">
+          <picture className="rounded-full overflow-hidden max-w-[68px]">
             <Image
               src={imgUrl}
               alt="Routes"
-              width={152}
-              height={152}
+              width={68}
+              height={68}
               className="size-full  aspect-square object-cover"
             />
           </picture>
@@ -50,7 +50,7 @@ const TestimonialCard = ({ imgUrl, title, subTitle, description }: Props) => {
           </Text>
         </div>
       </div>
-      <picture className="flex gap-1 w-full justify-end">
+      <div className="flex gap-1 w-full justify-end">
         <picture className="bg-white p-2 rounded-3xl ">
           <Image
             src="/images/rating.svg"
@@ -60,7 +60,7 @@ const TestimonialCard = ({ imgUrl, title, subTitle, description }: Props) => {
             className="size-auto aspect-auto"
           />
         </picture>
-      </picture>
+      </div>
     </div>
   )
 }

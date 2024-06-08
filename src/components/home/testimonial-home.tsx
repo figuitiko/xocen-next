@@ -12,14 +12,14 @@ const TESTIMONIAL_CARDS = [
       'Visitar el observatorio de pájaros en Xocen fue una experiencia maravillosa. Los guías eran expertos y apasionados por la avifauna local. Pudimos observar especies únicas en su hábitat natural. La organización del tour fue impecable y el paisaje espectacular. Recomiendo esta actividad a todos los amantes de la naturaleza. Sin duda, volveremos pronto para disfrutar de más avistamientos y aprender más sobre estas aves.'
   },
   {
-    imgUrl: '/images/avatar-test.webp',
+    imgUrl: '/images/testimonial-1.webp',
     title: 'Liam McDonald',
     subTitle: 'Cliente Turismo Holístico',
     description:
       'El tour de observación de pájaros en Xocen superó todas mis expectativas. Desde el primer momento, la atención y el conocimiento del personal fueron excepcionales. Logramos ver una gran variedad de especies que nunca antes había visto. El entorno es simplemente hermoso y la experiencia es enriquecedora. Es un destino ideal para quienes buscan conectar con la naturaleza. Definitivamente, una actividad imperdible en Yucatán.'
   },
   {
-    imgUrl: '/images/avatar-test.webp',
+    imgUrl: '/images/testimonial-2.webp',
     title: 'Aisha Singh',
     subTitle: 'Cliente Turismo Holístico',
     description:
