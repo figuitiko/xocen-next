@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Text } from '../ui/text'
-import { alfaSlabOne, rakkas, roboto } from '@/app/ui/fonts'
+import { alfaSlabOne, rakkas } from '@/app/ui/fonts'
 import { ButtonMain } from '../buttons'
 import CardRoutes from './card-routes'
 
@@ -37,7 +37,6 @@ const RoutesSection = () => {
             </Text>
             <Text
               as="p"
-              font={roboto.className}
               className="text-[16px] md:text-[24px] text-brand-text leading-[21px] md:leading-[36px] font-normal w-[80%] "
             >
               El diseño de las rutas y la calidad de nuestros servicios se

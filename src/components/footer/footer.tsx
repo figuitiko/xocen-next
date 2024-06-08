@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from '../ui/text'
 import { ButtonMain } from '../buttons'
-import { abel, alfaSlabOne, poppins } from '@/app/ui/fonts'
+import { alfaSlabOne, poppins } from '@/app/ui/fonts'
 import FooterNavbar from './footer-navbar'
 export const FOOTER_CONTENT = {
   TEXT_SECTION: 'VEN Y',
@@ -20,7 +20,6 @@ const Footer = () => {
         <Text
           as="h4"
           className="text-[24px] md:text-[32px] font-normal  uppercase text-center"
-          font={abel.className}
         >
           {FOOTER_CONTENT.TEXT_SECTION}
         </Text>

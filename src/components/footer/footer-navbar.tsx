@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Text } from '../ui/text'
-import { roboto } from '@/app/ui/fonts'
+
 import { NavLink } from '../ui/nav-links'
 import Link from 'next/link'
 
@@ -31,9 +31,7 @@ const FooterNavbar = () => {
           {FOOTER_NAVBAR_CONTENT.links.map((link) => (
             <li key={link.href}>
               <NavLink href={link.href}>
-                <Text font={roboto.className} className="text-sm uppercase">
-                  {link.text}
-                </Text>
+                <Text className="text-sm uppercase">{link.text}</Text>
               </NavLink>
             </li>
           ))}

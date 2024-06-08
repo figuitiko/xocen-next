@@ -2,7 +2,7 @@ import { Text } from '@/components/ui/text'
 
 import Image from 'next/image'
 import { ButtonMain } from '@/components/buttons'
-import { abel, alfaSlabOne, rakkas } from '@/app/ui/fonts'
+import { alfaSlabOne, rakkas } from '@/app/ui/fonts'
 
 export const HOME_CONTENT = {
   HERO_HEADER_1_TEXT: 'ecoturismo',
@@ -46,14 +46,12 @@ const HeroMain = () => {
           </div>
           <Text
             as="p"
-            font={abel.className}
             className="text-[54px] text-brand-text leading-[68px] font-normal"
           >
             {HOME_CONTENT.HERO_HEADER_3_TEXT}
           </Text>
           <Text
             as="p"
-            font={abel.className}
             className="text-[24px] text-brand-text leading-[30px] font-normal"
           >
             {HOME_CONTENT.HERO_PARAGRAPH_TEXT}
@@ -144,7 +142,6 @@ const HeroMain = () => {
             <div className=" col-start-1 col-end-3  row-start-1 size-fit self-center">
               <Text
                 as="h2"
-                font={abel.className}
                 className="text-[48px] text-brand-text leading-[60px] uppercase  font-normal "
               >
                 {HOME_CONTENT.HERO_PARAGRAPH_TEXT_2}
@@ -153,7 +150,6 @@ const HeroMain = () => {
             <div className="col-start-1 row-start-2">
               <Text
                 as="p"
-                font={abel.className}
                 className="text-[24px] text-brand-text leading-[30px]  font-normal"
               >
                 {HOME_CONTENT.HERO_PARAGRAPH_TEXT_3}

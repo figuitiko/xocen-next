@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { NavLink } from '../ui/nav-links'
 import { Text } from '../ui/text'
-import { roboto } from '@/app/ui/fonts'
+
 import { cva } from 'class-variance-authority'
 
 export const CONFIG = {
@@ -103,7 +103,7 @@ export const NavBar = () => {
             className="block after:block before:block bg-white after:bg-white before:bg-white  md:hidden cursor-pointer absolute
           before:absolute after:absolute h-1 before:h-1 after:h-1 w-7  before:w-7  after:w-7 border-2 before:border-2 after:border-2 border-orange-400 before:border-orange-400 after:border-orange-400 transform before:transform after:transform transition-transform after:transition-transform before:transition-transform  duration-400ms after:duration-400ms before:duration-400ms ease-custom-bezier before:ease-custom-bezier after:ease-custom-bezier before:content-[' '] after:content-[' '] before:-mt-[10px] after:mt-[6px] before:-ml-[2px] after:-ml-[2px]"
           ></div>
-          <nav className="flex md:hidden opacity-0  transition-all ease-in-out duration-200 absolute right-4 top-6 bg-main-100 ">
+          <nav className="flex md:hidden opacity-0  z-50 transition-all ease-in-out duration-200 absolute right-4 top-6 bg-main-100 ">
             <ul className="flex flex-col md:flex-row  uppercase flex-wrap">
               {CONFIG.MENU_ITEMS.map((item) => (
                 <li
@@ -113,10 +113,7 @@ export const NavBar = () => {
                   })}
                 >
                   <NavLink href={item.href}>
-                    <Text
-                      font={roboto.className}
-                      className="text-sm text-light-brand"
-                    >
+                    <Text className="text-sm text-light-brand">
                       {item.name}
                     </Text>
                   </NavLink>
@@ -131,12 +128,7 @@ export const NavBar = () => {
             {CONFIG.MENU_ITEMS.map((item) => (
               <li key={item.id}>
                 <NavLink href={item.href}>
-                  <Text
-                    font={roboto.className}
-                    className="text-sm text-light-brand"
-                  >
-                    {item.name}
-                  </Text>
+                  <Text className="text-sm text-light-brand">{item.name}</Text>
                 </NavLink>
               </li>
             ))}

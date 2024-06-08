@@ -1,4 +1,4 @@
-import { abel, alfaSlabOne, rakkas } from '@/app/ui/fonts'
+import { alfaSlabOne, rakkas } from '@/app/ui/fonts'
 import { Text } from '../ui/text'
 import Image from 'next/image'
 import { ButtonMain } from '../buttons'
@@ -42,7 +42,6 @@ const HeroMainMobile = () => {
           <div>
             <Text
               as="p"
-              font={abel.className}
               className="flex-1 text-center text-main-200 text-[24px]  leading-[20px] mt-4 text-balance"
             >
               {HERO_MAIN_CONTENT.HERO_PARAGRAPH_TEXT_2_MOBILE}
@@ -51,7 +50,6 @@ const HeroMainMobile = () => {
         </div>
         <Text
           as="p"
-          font={abel.className}
           className="text-center  text-brand-text text-[20px]  leading-[20px] mt-4"
         >
           {HERO_MAIN_CONTENT.HERO_PARAGRAPH_TEXT_3_MOBILE}
@@ -88,7 +86,6 @@ const HeroMainMobile = () => {
       <div className="flex flex-col w-full justify-center  p-8">
         <Text
           as="p"
-          font={abel.className}
           className="text-center text-brand-text text-[40px]  leading-[50px] mt-4"
         >
           {HERO_MAIN_CONTENT.HERO_PARAGRAPH_TEXT_3}
@@ -102,10 +99,7 @@ const HeroMainMobile = () => {
             className="h-auto w-auto object-contain"
           />
         </picture>
-        <Text
-          font={abel.className}
-          className="text-center text-brand-text text-[24px]  leading-[30px] mt-4"
-        >
+        <Text className="text-center text-brand-text text-[24px]  leading-[30px] mt-4">
           {HERO_MAIN_CONTENT.HERO_PARAGRAPH_TEXT_4}
         </Text>
       </div>

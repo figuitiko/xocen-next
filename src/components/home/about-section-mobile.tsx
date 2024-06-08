@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from '../ui/text'
 import { ABOUT_CONTENT } from './about-section'
-import { abel, alfaSlabOne, rakkas } from '@/app/ui/fonts'
+import { alfaSlabOne, rakkas } from '@/app/ui/fonts'
 import Image from 'next/image'
 import { ButtonMain } from '../buttons'
 export const ABOUT_CONTENT_MOBILE = {
@@ -27,10 +27,7 @@ const AboutSectionMobile = () => {
           className="object-cover size-full"
         />
       </picture>
-      <Text
-        font={abel.className}
-        className="text-[25px] leading-[24px] text-center"
-      >
+      <Text className="text-[25px] leading-[24px] text-center">
         {ABOUT_CONTENT.PARAGRAPH_1}
       </Text>
       <div className="flex flex-col gap-4">
@@ -53,19 +50,12 @@ const AboutSectionMobile = () => {
           />
         </picture>
       </div>
-      <Text
-        font={abel.className}
-        className="text-[32px] leading-[41px] text-center "
-      >
+      <Text className="text-[32px] leading-[41px] text-center ">
         {ABOUT_CONTENT_MOBILE.PARAGRAPH_1}
       </Text>
       <div className="flex gap-4">
         <div className="max-w-[60%] flex">
-          <Text
-            as="p"
-            font={abel.className}
-            className="text-[25px] leading-[27px] block max-w-1/2"
-          >
+          <Text as="p" className="text-[25px] leading-[27px] block max-w-1/2">
             {ABOUT_CONTENT_MOBILE.PARAGRAPH_2}
           </Text>
         </div>
@@ -88,10 +78,7 @@ const AboutSectionMobile = () => {
           Saber más
         </Text>
       </ButtonMain>
-      <Text
-        font={abel.className}
-        className="text-[20px] leading-[32px] text-center"
-      >
+      <Text className="text-[20px] leading-[32px] text-center">
         {ABOUT_CONTENT_MOBILE.PARAGRAPH_3}
       </Text>
     </section>

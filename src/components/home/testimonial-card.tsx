@@ -15,7 +15,7 @@ const TestimonialCard = ({ imgUrl, title, subTitle, description }: Props) => {
     <div className="flex flex-col flex-1 gap-2">
       <div className="flex p-8 flex-col bg-white rounded-3xl gap-4">
         <div className="flex gap-8">
-          <picture className="rounded-full overflow-hidden max-w-[68px]">
+          <picture className="rounded-full overflow-hidden max-w-[]">
             <Image
               src={imgUrl}
               alt="Routes"
@@ -28,7 +28,7 @@ const TestimonialCard = ({ imgUrl, title, subTitle, description }: Props) => {
             <Text
               as="h3"
               font={poppins.className}
-              className="text-[24px] text-brand-text leading-[36px]"
+              className="text-[24px] text-brand-text leading-[21px]"
             >
               {title}
             </Text>

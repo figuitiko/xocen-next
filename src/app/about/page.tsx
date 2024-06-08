@@ -6,7 +6,7 @@ import { ButtonMain } from '@/components/buttons'
 const AboutPage = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-[1fr_1fr_1fr_1fr_auto]  max-w-[1200px] w-full mx-auto bg-main-200 py-0  px-4 md:px-12 gap-4">
-      <div className=" col-start-1 md:col-start-1 col-end-6 md:col-end-3 row-start-1 row-end-3 flex flex-col items-center md:items-start gap-4">
+      <div className="col-start-1 md:col-start-1 col-end-6 md:col-end-3 row-start-1 row-end-3 flex flex-col items-center md:items-start gap-4">
         <picture className="hidden md:flex h-[287px] w-[303px] relative">
           <Image
             src="/images/logo-routes.png"
@@ -26,7 +26,7 @@ const AboutPage = () => {
         <Text
           as="h1"
           font={rakkas.className}
-          className="block md:hidden  text-[36px] text-white leading-[28px] text-center"
+          className="block md:hidden  text-[36px] text-white leading-[28px] text-center mt-8"
         >
           NOSOTROS
         </Text>

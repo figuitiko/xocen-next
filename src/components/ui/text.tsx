@@ -1,4 +1,4 @@
-import { freight } from '@/app/ui/fonts'
+import { poppins } from '@/app/ui/fonts'
 import { cn } from '@/lib/utils'
 type Props<T extends React.ElementType> = {
   children: React.ReactNode
@@ -13,7 +13,7 @@ export const Text = <T extends React.ElementType = 'span'>({
   as,
   children,
   className,
-  font = freight.className,
+  font = poppins.className,
   ...others
 }: TextProps<T>) => {
   const Component = as ?? 'span'
