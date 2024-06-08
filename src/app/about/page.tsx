@@ -7,12 +7,13 @@ const AboutPage = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-[1fr_1fr_1fr_1fr_auto]  max-w-[1200px] w-full mx-auto bg-main-200 py-0  px-4 md:px-12 gap-4">
       <div className=" col-start-1 md:col-start-1 col-end-6 md:col-end-3 row-start-1 row-end-3 flex flex-col items-center md:items-start gap-4">
-        <picture className="hidden md:flex h-[287px] w-[303px] pt-8 relative">
+        <picture className="hidden md:flex h-[287px] w-[303px] relative">
           <Image
             src="/images/logo-routes.png"
             alt="Routes"
             fill
-            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-contain size-full"
           />
         </picture>
         <Text
@@ -29,13 +30,13 @@ const AboutPage = () => {
         >
           NOSOTROS
         </Text>
-        <picture className="flex md:hidden max-w-[303px]  md:max-w-auto  md:h-auto overflow-hidden   rounded-b-full">
+        <picture className="flex md:hidden overflow-hidden rounded-b-full   w-[358px] h-[473px] max-h-[473px] relative">
           <Image
             src="/images/last-section-bg.webp"
             alt="About us"
-            width={600}
-            height={580}
-            className="object-contain size-full md:size-full"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover size-full"
           />
         </picture>
 
@@ -72,21 +73,21 @@ const AboutPage = () => {
             className="object-cover size-full"
           />
         </picture>
-        <picture className="hidden md:flex overflow-hidden rounded-b-full">
+        <picture className="hidden md:flex overflow-hidden rounded-b-full   w-[358px] h-[473px] max-h-[473px] relative">
           <Image
             src="/images/last-section-bg.webp"
             alt="About us"
-            width={358}
-            height={473}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover size-full"
           />
         </picture>
-        <picture className="hidden md:flex overflow-hidden rounded-b-full">
+        <picture className="hidden md:flex overflow-hidden rounded-b-full w-[358px] h-[473px] max-h-[473px] relative">
           <Image
             src="/images/about-guides.webp"
             alt="About us"
-            width={358}
-            height={473}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover size-full"
           />
         </picture>
@@ -101,13 +102,14 @@ const AboutPage = () => {
             className="object-cover size-full"
           />
         </picture>
-        <div className="flex gap-8">
+        <div className="flex md:hidden gap-8 justify-center w-full">
           <picture className="flex md:hidden overflow-hidden  relative rounded-full w-[184px] h-[316px]">
             <Image
               src="/images/xocen-happy.webp"
               alt="About us"
               fill
-              className=" object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className=" object-cover size-full"
             />
           </picture>
           <picture className="flex md:hidden overflow-hidden rounded-full relative w-[184px] h-[316px]">
@@ -115,7 +117,8 @@ const AboutPage = () => {
               src="/images/young-team.webp"
               alt="About us"
               fill
-              className=" object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className=" object-cover size-full"
             />
           </picture>
         </div>
@@ -214,13 +217,13 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="col-start-1 col-end-6 row-start-6 md:row-start-5 row-end-7 md:row-end-6 flex gap-4 auto-rows-auto items-center md:items-start">
-        <div className="md:hidden relative w-full flex justify-center">
-          <picture className="relative size-full h-[473px] overflow-hidden rounded-b-full">
+        <div className="flex md:hidden w-full justify-center">
+          <picture className="flex overflow-hidden rounded-b-full   w-[358px] h-[473px] max-h-[473px] relative">
             <Image
               src="/images/about-guides.webp"
               alt="logo"
-              width={400}
-              height={600}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="size-full object-cover"
             />
           </picture>
