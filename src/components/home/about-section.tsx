@@ -44,16 +44,16 @@ const AboutSection = () => {
           </picture>
         </div>
         <div className="flex justify-center w-full">
-          <Text className="text-center text-[32px] leading-[37px]  font-normal max-w-[80%]">
+          <Text className="text-center text-[24px] leading-[30px]  font-normal max-w-[80%]">
             {ABOUT_CONTENT.PARAGRAPH_1}
           </Text>
         </div>
         <div className="flex gap-8">
           <div className="flex flex-col gap-8 min-w-[424px]">
-            <Text className="text-[32px] leading-[48px]">
+            <Text className="text-[24px] leading-[30px]">
               {ABOUT_CONTENT.PARAGRAPH_2}
             </Text>
-            <Text className="text-[32px] leading-[48px]">
+            <Text className="text-[24px] leading-[30px]">
               {ABOUT_CONTENT.PARAGRAPH_3}
             </Text>
             <ButtonMain href="/about"> Saber más</ButtonMain>
@@ -95,7 +95,7 @@ const AboutSection = () => {
                 className="size-full object-cover"
               />
             </picture>
-            <Text className="text-[32px] leading-[48px]">
+            <Text className="text-[24px] leading-[30px]">
               {ABOUT_CONTENT.PARAGRAPH_4}
             </Text>
           </div>
