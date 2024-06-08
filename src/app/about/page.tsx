@@ -1,45 +1,48 @@
 import { Text } from '@/components/ui/text'
 import Image from 'next/image'
-import { abel, alfaSlabOne } from '../ui/fonts'
+import { abel, alfaSlabOne, poppins, rakkas } from '../ui/fonts'
 import { ButtonMain } from '@/components/buttons'
 
 const AboutPage = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-[1fr_1fr_1fr_1fr_auto]  max-w-[1200px] w-full mx-auto bg-main-200 py-0  px-4 md:px-12 gap-4">
       <div className=" col-start-1 md:col-start-1 col-end-6 md:col-end-3 row-start-1 row-end-3 flex flex-col items-center md:items-start gap-4">
-        <picture className="hidden md:flex w-full h-full pt-8">
+        <picture className="hidden md:flex h-[287px] w-[303px] pt-8 relative">
           <Image
             src="/images/logo-routes.png"
             alt="Routes"
-            width={365}
-            height={126}
+            fill
+            className="object-cover"
           />
         </picture>
         <Text
           as="h1"
+          font={rakkas.className}
           className="hidden md:block text-[64px] text-white leading-[61px]"
         >
           ACERCA DE NOSOTROS
         </Text>
         <Text
           as="h1"
+          font={rakkas.className}
           className="block md:hidden  text-[36px] text-white leading-[28px] text-center"
         >
           NOSOTROS
         </Text>
-        <picture className="flex md:hidden max-w-[303px]  md:max-w-auto h-[287px] md:h-auto overflow-hidden rounded-b-full">
+        <picture className="flex md:hidden max-w-[303px]  md:max-w-auto  md:h-auto overflow-hidden   rounded-b-full">
           <Image
             src="/images/last-section-bg.webp"
             alt="About us"
-            width={358}
-            height={473}
-            className="object-cover size-auto md:size-full"
+            width={600}
+            height={580}
+            className="object-contain size-full md:size-full"
           />
         </picture>
+
         <Text
           as="p"
-          font={abel.className}
-          className="text-[17px] md:text-[28px] text-white leading-[24px]  md:leading-[30px]"
+          font={poppins.className}
+          className="text-[24px] text-white leading-[24px]  md:leading-[30px]"
         >
           Somos una agencia ecoturística comunitaria originaria del estado de
           Yucatán, co México conformada por jóvenes de origen maya, ofrecemos
@@ -52,7 +55,7 @@ const AboutPage = () => {
         <ButtonMain href="/about">
           <Text
             as="span"
-            font={alfaSlabOne.className}
+            font={poppins.className}
             className="text-white text-[16px] leading-[21px]"
           >
             Conoce nuestras rutas
@@ -99,50 +102,48 @@ const AboutPage = () => {
           />
         </picture>
         <div className="flex gap-8">
-          <picture className="flex md:hidden overflow-hidden  relative rounded-full h-[316px] w-[184px]">
+          <picture className="flex md:hidden overflow-hidden  relative rounded-full w-[184px] h-[316px]">
             <Image
               src="/images/xocen-happy.webp"
               alt="About us"
-              width={184}
-              height={316}
-              className="object-cover size-auto"
+              fill
+              className=" object-cover"
             />
           </picture>
-          <picture className="flex md:hidden overflow-hidden rounded-full relative h-[316px] w-[184px]">
+          <picture className="flex md:hidden overflow-hidden rounded-full relative w-[184px] h-[316px]">
             <Image
               src="/images/young-team.webp"
               alt="About us"
-              width={184}
-              height={316}
-              className="object-cover size-auto"
+              fill
+              className=" object-cover"
             />
           </picture>
         </div>
         <Text
-          font={abel.className}
+          font={poppins.className}
           as="p"
-          className="text-[28px] md:text-[24px] text-white leading-[30px] text-center md:text-left"
+          className="text-[24px] text-white leading-[30px] text-center md:text-left"
         >
           Ofrecemos rutas turísticas personalizadas de Naturaleza y Cultura
           Maya, con guías certificado por la Secretaría de Turismo (SECTUR) en
           la modalidad de:
         </Text>
         <Text
-          font={abel.className}
+          font={poppins.className}
           as="p"
-          className="text-[28px] md:text-[24px] text-white leading-[30px] text-center md:text-left"
+          className="text-[24px] md:text-[24px] text-white leading-[30px] text-center md:text-left"
         >
           Turismo Orientado hacia{' '}
           <Text
-            font={alfaSlabOne.className}
-            className="text-[28px] md:text-[24px]  leading-[30px]"
+            font={poppins.className}
+            className="text-[24px]  leading-[30px]"
           >
             la Naturaleza NOM-09-TUR-2002 Y NOM-08-TUR-2002
           </Text>{' '}
           Turismo de carácter cultural;
         </Text>
         <Text
-          font={abel.className}
+          font={poppins.className}
           as="p"
           className="text-[24px] text-white leading-[30px] text-center md:text-left"
         >
@@ -161,7 +162,7 @@ const AboutPage = () => {
             Misión
           </Text>
           <Text
-            font={abel.className}
+            font={poppins.className}
             as="p"
             className="text-[24px] text-white leading-[30px]"
           >
@@ -182,7 +183,7 @@ const AboutPage = () => {
             VISIÓN
           </Text>
           <Text
-            font={abel.className}
+            font={poppins.className}
             as="p"
             className="text-[24px] text-white leading-[30px] text-right md:text-left"
           >
@@ -203,7 +204,7 @@ const AboutPage = () => {
             VALORES
           </Text>
           <Text
-            font={abel.className}
+            font={poppins.className}
             as="p"
             className="text-[24px] text-white leading-[30px]"
           >

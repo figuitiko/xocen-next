@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from '../ui/text'
 import { ButtonMain } from '../buttons'
-import { abel, alfaSlabOne } from '@/app/ui/fonts'
+import { abel, alfaSlabOne, poppins } from '@/app/ui/fonts'
 import FooterNavbar from './footer-navbar'
 export const FOOTER_CONTENT = {
   TEXT_SECTION: 'VEN Y',
@@ -34,7 +34,7 @@ const Footer = () => {
         <Text
           as="p"
           className="text-[20px] font-normal text-white text-center max-w-[80%]"
-          font={abel.className}
+          font={poppins.className}
         >
           {FOOTER_CONTENT.TEXT_SUBHEADING}
         </Text>
@@ -42,7 +42,7 @@ const Footer = () => {
           {
             <Text
               as="span"
-              font={alfaSlabOne.className}
+              font={poppins.className}
               className="text-white  text-base font-normal"
             >
               {FOOTER_CONTENT.BTN_TEXT}
@@ -52,7 +52,7 @@ const Footer = () => {
         <Text
           as="p"
           className="text-white text-xs text-center font-normal"
-          font={abel.className}
+          font={poppins.className}
         >
           © {currentYear} {FOOTER_CONTENT.TEXT_FOOTER}
         </Text>
