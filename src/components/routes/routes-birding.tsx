@@ -1,5 +1,5 @@
 import PictureWrapper from '../ui/picture-wrapper'
-import RecommendationsComponent from './recomendations-component'
+import RecommendationsComponent from './recommendations-component'
 import HeadingRouting from './heading-routing'
 import SectionWrapper from '../ui/section-wrapper'
 

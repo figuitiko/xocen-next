@@ -18,7 +18,7 @@ const RoutesHero = () => {
         textContentClassName="text-brand"
       />
 
-      <HrMarker classPercent="w-[10%] md:mx-auto lg:mx-0 " />
+      <HrMarker className="w-[10%] md:mx-auto lg:mx-0 " />
       <div className="flex gap-4 md:flex-col md:items-center lg:flex-row">
         <div className="flex-1 flex flex-col items-center">
           <Text

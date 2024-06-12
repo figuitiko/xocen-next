@@ -6,12 +6,19 @@ type RecommendationItem = {
   title: string
   description: string
 }
-type Props = {
+export type RecommendationsProps = {
   recommendations: RecommendationItem[]
   className?: string
+  textClassName?: string
+  paragraphsClassName?: string
 }
 
-const RecommendationsComponent = ({ recommendations, className }: Props) => {
+const RecommendationsComponent = ({
+  recommendations,
+  className,
+  textClassName,
+  paragraphsClassName
+}: RecommendationsProps) => {
   return (
     <div className={cn('flex flex-col gap-4', className)}>
       {recommendations.map(({ title, description }) => (
@@ -19,11 +26,20 @@ const RecommendationsComponent = ({ recommendations, className }: Props) => {
           <Text
             font={alfaSlabOne.className}
             as="h2"
-            className="text-[24px] md:text-[28px] leading-[32px] "
+            className={cn(
+              'text-[24px] md:text-[28px] leading-[32px]',
+              textClassName
+            )}
           >
             {title}
           </Text>
-          <Text as="p" className="text-[20px] md:text-[24px] leading-[30px]">
+          <Text
+            as="p"
+            className={cn(
+              'text-[20px] md:text-[24px] leading-[30px]',
+              paragraphsClassName
+            )}
+          >
             {description}
           </Text>
         </div>

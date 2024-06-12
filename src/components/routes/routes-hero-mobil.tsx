@@ -3,10 +3,11 @@ import { Text } from '../ui/text'
 import { alfaSlabOne, rakkas } from '@/app/ui/fonts'
 import PictureWrapper from '../ui/picture-wrapper'
 import HrMarker from '../ui/hr-marker'
+import SectionWrapperMobile from '../ui/section-wrapper-mobil'
 
 const RoutesHeroMobil = () => {
   return (
-    <section className="flex flex-col md:hidden gap-4 py-12 w-full  justify-center items-center">
+    <SectionWrapperMobile>
       <Text
         as="h1"
         font={rakkas.className}
@@ -70,7 +71,7 @@ const RoutesHeroMobil = () => {
           </li>
         </ul>
       </div>
-    </section>
+    </SectionWrapperMobile>
   )
 }
 

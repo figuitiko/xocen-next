@@ -20,7 +20,7 @@ const config: Config = {
           200: '#226440'
         },
         'light-brand': '#F3F0F0',
-        brand: '#252525',
+        brand: '#827e7e',
         'layout-color': '#F3F0F0',
         'light-dark': '#4D4D4D'
       },

@@ -2,6 +2,7 @@ import { Text } from '@/components/ui/text'
 import Image from 'next/image'
 import { alfaSlabOne, poppins, rakkas } from '../ui/fonts'
 import { ButtonMain } from '@/components/ui/buttons'
+import PictureWrapper from '@/components/ui/picture-wrapper'
 
 const AboutPage = () => {
   return (
@@ -30,7 +31,7 @@ const AboutPage = () => {
         >
           NOSOTROS
         </Text>
-        <picture className="flex md:hidden overflow-hidden rounded-b-full   w-[358px] h-[473px] max-h-[473px] relative">
+        <picture className="flex md:hidden overflow-hidden rounded-b-full   w-[291px] h-[473px] max-h-[473px] relative">
           <Image
             src="/images/last-section-bg.webp"
             alt="About us"
@@ -43,7 +44,7 @@ const AboutPage = () => {
         <Text
           as="p"
           font={poppins.className}
-          className="text-[24px] text-white leading-[24px]  md:leading-[30px]"
+          className="text-[24px] text-white leading-[24px]  md:leading-[30px] max-w-[291px] md:max-w-full"
         >
           Somos una agencia ecoturística comunitaria originaria del estado de
           Yucatán, co México conformada por jóvenes de origen maya, ofrecemos
@@ -64,7 +65,7 @@ const AboutPage = () => {
         </ButtonMain>
       </div>
       <div className="col-start-1 md:col-start-3 col-end-6 md:col-end-6 row-start-3 md:row-start-1 row-end-4 md:row-end-2 flex gap-12">
-        <picture className="md:hidden overflow-hidden rounded-3xl relative">
+        {/* <picture className="md:hidden overflow-hidden rounded-3xl relative">
           <Image
             src="/images/team-xocen.webp"
             alt="About us"
@@ -72,7 +73,11 @@ const AboutPage = () => {
             height={511}
             className="object-cover size-full"
           />
-        </picture>
+        </picture> */}
+        <PictureWrapper
+          src="/images/team-xocen.webp"
+          className="w-[291px] h-[260px] mx-auto md:hidden"
+        />
         <picture className="hidden md:flex overflow-hidden rounded-b-full   w-[358px] h-[473px] max-h-[473px] relative">
           <Image
             src="/images/last-section-bg.webp"
@@ -125,7 +130,7 @@ const AboutPage = () => {
         <Text
           font={poppins.className}
           as="p"
-          className="text-[24px] text-white leading-[30px] text-center md:text-left"
+          className="text-[24px] text-white leading-[30px] text-center md:text-left  mx-auto md:mx-0 max-w-[291px]  md:max-w-full"
         >
           Ofrecemos rutas turísticas personalizadas de Naturaleza y Cultura
           Maya, con guías certificado por la Secretaría de Turismo (SECTUR) en
@@ -134,12 +139,12 @@ const AboutPage = () => {
         <Text
           font={poppins.className}
           as="p"
-          className="text-[24px] md:text-[24px] text-white leading-[30px] text-center md:text-left"
+          className="text-[24px] md:text-[24px] text-white leading-[30px] text-center md:text-left  mx-auto md:mx-0 max-w-[291px]  md:max-w-full"
         >
           Turismo Orientado hacia{' '}
           <Text
             font={poppins.className}
-            className="text-[24px]  leading-[30px]"
+            className="text-[24px]  leading-[30px]  mx-auto md:mx-0 max-w-[291px]  md:max-w-full"
           >
             la Naturaleza NOM-09-TUR-2002 Y NOM-08-TUR-2002
           </Text>{' '}
@@ -148,15 +153,15 @@ const AboutPage = () => {
         <Text
           font={poppins.className}
           as="p"
-          className="text-[24px] text-white leading-[30px] text-center md:text-left"
+          className="text-[24px] text-white leading-[30px] text-center md:text-left  mx-auto md:mx-0 max-w-[291px]  md:max-w-full"
         >
           Siendo la observación de aves e inmersión en la cultura Maya nuestras
           especialidades.
         </Text>
       </div>
-      <div className="flex flex-col gap-8  col-start-1 md:col-start-4 col-end-6  row-start-4 md:row-start-2 row-end-5 md:row-end-5">
+      <div className="flex flex-col gap-8  col-start-1 md:col-start-4 col-end-6  row-start-4 md:row-start-2 row-end-5 md:row-end-5 max-w-[291px] mx-auto md:mx-0 md:max-w-full">
         <hr className="h-2 bg-white w-[20%]" />
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4  max-w-[291px] md:max-w-full">
           <Text
             font={alfaSlabOne.className}
             as="h2"
@@ -218,7 +223,7 @@ const AboutPage = () => {
       </div>
       <div className="col-start-1 col-end-6 row-start-6 md:row-start-5 row-end-7 md:row-end-6 flex gap-4 auto-rows-auto items-center md:items-start">
         <div className="flex md:hidden w-full justify-center">
-          <picture className="flex overflow-hidden rounded-b-full   w-[358px] h-[473px] max-h-[473px] relative">
+          <picture className="flex overflow-hidden rounded-b-full   w-[291px] h-[473px] max-h-[473px] relative">
             <Image
               src="/images/about-guides.webp"
               alt="logo"

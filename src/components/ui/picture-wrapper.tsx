@@ -27,18 +27,20 @@ type Props = {
   className: string
   roundedVariants?: RoundedVariants
   src: string
+  alt?: string
 }
 
 const PictureWrapper = ({
   className,
   roundedVariants = RoundedVariants.ROUNDED_DEFAULT,
-  src
+  src,
+  alt = 'Routes'
 }: Props) => {
   return (
     <picture className={cn(PictureVariant({ roundedVariants }), className)}>
       <Image
         src={src}
-        alt="Routes"
+        alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="object-cover size-full"

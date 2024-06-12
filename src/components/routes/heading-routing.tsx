@@ -32,6 +32,7 @@ const HeadingRouting = ({
       <div className="flex-1 flex flex-col items-center gap-8">
         <Text
           font={rakkas.className}
+          as="h2"
           className={cn(
             'text-center text-[72px] leading-[63px] uppercase',
             textTitleClassName
@@ -40,6 +41,7 @@ const HeadingRouting = ({
           {title}
         </Text>
         <Text
+          as="p"
           className={cn(
             'text-center text-[24px] leading-[30px] font-normal',
             textContentClassName
