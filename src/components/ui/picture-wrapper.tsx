@@ -6,7 +6,8 @@ export enum RoundedVariants {
   ROUNDED_TOP = 'roundedTop',
   ROUNDED_BOTTOM = 'roundedBottom',
   ROUNDED = 'rounded-full',
-  ROUNDED_DEFAULT = 'rounded-3xl'
+  ROUNDED_DEFAULT = 'rounded-3xl',
+  SQUARE = 'rounded-none'
 }
 
 const PictureVariant = cva('relative flex overflow-hidden', {
@@ -15,7 +16,8 @@ const PictureVariant = cva('relative flex overflow-hidden', {
       [RoundedVariants.ROUNDED_TOP]: 'rounded-t-full',
       [RoundedVariants.ROUNDED_BOTTOM]: 'rounded-b-full',
       [RoundedVariants.ROUNDED]: 'rounded-full',
-      [RoundedVariants.ROUNDED_DEFAULT]: 'rounded-3xl'
+      [RoundedVariants.ROUNDED_DEFAULT]: 'rounded-3xl',
+      [RoundedVariants.SQUARE]: 'rounded-none'
     }
   },
   defaultVariants: {
