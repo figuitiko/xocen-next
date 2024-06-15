@@ -12,14 +12,14 @@ const GuideSocialIcon = ({ srcImg, altImg, href }: Props) => {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="size-9 rounded-full bg-main-200 p-2 flex items-center justify-center"
+      className="rounded-full bg-main-200 max-w-[32px]  flex items-center justify-center size-full aspect-square"
     >
-      <picture>
+      <picture className="relative size-5 flex items-center justify-center">
         <Image
           src={srcImg}
           alt={altImg}
           fill
-          className="object-cover size-full aspect-square"
+          className="object-cover size-full aspect-square "
         />
       </picture>
     </a>
