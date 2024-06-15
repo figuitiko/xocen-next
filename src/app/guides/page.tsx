@@ -2,6 +2,7 @@ import SectionWrapper from '@/components/ui/section-wrapper'
 import { Text } from '@/components/ui/text'
 import { rakkas } from '../ui/fonts'
 import CardGuides from '@/components/guides/guides-card'
+import Image from 'next/image'
 
 const GUIDES = [
   {
@@ -109,29 +110,41 @@ const GUIDES = [
 
 const GuidePage = () => {
   return (
-    <SectionWrapper>
-      <div className="w-full flex items-center flex-col text-[48px]">
-        <Text
-          as="h1"
-          font={rakkas.className}
-          className="text-main-100 text-[48px] leading-[48px] uppercase"
-        >
-          Nuestros
-        </Text>
-        <Text
-          as="h2"
-          font={rakkas.className}
-          className="text-main-100 text-[70px] leading-[57px] uppercase"
-        >
-          Guias
-        </Text>
-      </div>
-      <div className="flex gap-4 w-full justify-center ">
-        {GUIDES.map((guide, index) => (
-          <CardGuides key={index} {...guide} />
-        ))}
-      </div>
-    </SectionWrapper>
+    <>
+      <SectionWrapper className="flex">
+        <div className="w-full flex items-center flex-col text-[48px]">
+          <Text
+            as="h1"
+            font={rakkas.className}
+            className="text-main-100 text-[48px] leading-[48px] uppercase"
+          >
+            Nuestros
+          </Text>
+          <Text
+            as="h2"
+            font={rakkas.className}
+            className="text-main-100 text-[70px] leading-[57px] uppercase"
+          >
+            Guias
+          </Text>
+        </div>
+        <div className="flex gap-4 w-full justify-center flex-col lg:flex-row ">
+          {GUIDES.map((guide, index) => (
+            <CardGuides key={index} {...guide} />
+          ))}
+        </div>
+      </SectionWrapper>
+      <section className="flex w-full h-[400px] md:h-screen">
+        <picture className="relative size-full">
+          <Image
+            src="/images/bird-guides.webp"
+            alt="Guía Certificado"
+            fill
+            className="object-cover  size-full"
+          />
+        </picture>
+      </section>
+    </>
   )
 }
 

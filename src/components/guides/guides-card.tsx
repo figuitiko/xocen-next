@@ -23,8 +23,8 @@ const CardGuides = ({
   socialArray
 }: Props) => {
   return (
-    <div className="flex flex-col gap-4 bg-white">
-      <picture className="relative w-[310px] h-[242px]">
+    <div className="flex flex-col gap-4 bg-white flex-1">
+      <picture className="relative w-full lg:w-[310px] h-[242px] md:h-[400px] lg:h-[242px]">
         <Image
           src={srcImg}
           alt={altImg}
@@ -45,7 +45,7 @@ const CardGuides = ({
         </Text>
         <Text
           as="p"
-          className="text-[14px] leading-[24px] text-brand text-center h-[400px] px-4"
+          className="text-[14px] leading-[24px] text-brand text-center h-auto lg:h-[400px] px-4"
         >
           {description}
         </Text>
